@@ -6,6 +6,13 @@
 # Version: 0.1
 # Bugs: allow CalculateCategories to take input & do its thing
 # ///////////////////////////////////////////////////////////////////////////////////
+# import
+
+
+#Window display
+display_width = 800
+display_height = 600
+
 
 # Introduction to the application
 print('M9rofaty\n')

@@ -1,10 +1,18 @@
 # M9rofaty
 M9rofaty is an application that allows you to manage your personal finance and see the the progress through out the month if you want to.
 
+
 ## Installation
-Install these packages and libraries to run your program
+Use the package manager [pip](https://pypi.org/project/) to install ....
 
+```bash
+pip install
+```
 
+## Usage
+```python
+import
+```
 
 ## Features
 
@@ -22,6 +30,6 @@ Version 0.1
 MIT License
 
 ## Authors
- Bahaa Najjar 
+ Bahaa Najjar
  Abdullah Najjar
  Mudhaa Najjar
