@@ -6,34 +6,42 @@
 # Version: 0.1
 # Bugs: allow CalculateCategories to take input & do its thing
 # ///////////////////////////////////////////////////////////////////////////////////
-# import
+# imports
+from tkinter import Tk, Label, Button
 
+class MyGUI:
+    def __init__(self, master):
+        self.master = master
+        master.title("M9rofaty")
 
-#Window display
-display_width = 800
-display_height = 600
+        self.label = Label(master, text="Welcome to our app!")
+        self.label.pack()
 
+        self.incomebutton = Button(master, text="Enter", command=self.income)
+        self.incomebutton.pack()
 
-# Introduction to the application
-print('M9rofaty\n')
-first = input('What is your name?\n')
-# User friendly
-print('Hi '+first)
-income = input('Enter your monthly income?\n')
-#CalculateCategories(income)
+        self.close_button = Button(master, text="Close", command=master.quit)
+        self.close_button.pack()
 
-# Divide up the salary for the best case senario to visualize it for the user
-def CalculateCategories(arg):
-    # if ArithmeticError
-    print("qoq!")
-CalculateCategories()
+    #To take the input-income from the user
+    def income(self):
+        print("Income is: ")
 
-# I/O function
-# def CalculateCategories(arg):
-#     # if ArithmeticError
-#     print("qoq!")
-# CalculateCategories()
+        #income = input('Enter your monthly income?\n')
+        #CalculateCategories(income)
 
+        # Divide up the salary for the best case senario to visualize it for the user
+        #def CalculateCategories(arg):
+            # if ArithmeticError
+            #print("qoq!")
+            #CalculateCategories()
 
+            # I/O function
+            # def CalculateCategories(arg):
+            #     # if ArithmeticError
+            #     print("qoq!")
+            # CalculateCategories()
 
-# Design the GUI using simpleGUI lib & lookup the pythonista thingy
+root = Tk()
+my_gui = MyGUI(root)
+root.mainloop()
