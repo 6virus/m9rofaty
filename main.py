@@ -24,7 +24,7 @@ class MyGUI:
         self.close_button.pack()
 
     #To take the input-income from the user
-    def income(self):
+    def income(self): 
         print("Income is: ")
 
         #income = input('Enter your monthly income?\n')
